@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ $t("lan") }}</h1>
-    <p>{{ $t("message") }}</p>
+    <p>{{ $t("message", { name }) }}</p>
     <span>
       {{ $t("friut.apple") }}
     </span>
@@ -19,9 +19,15 @@
 <script>
 export default {
   name: "HelloI18n",
+  data() {
+    return {
+      name: "Vue.js",
+    };
+  },
   methods: {
     change(lang) {
       this.$i18n.locale = lang;
+      localStorage.setItem("lang", lang);
     },
   },
 };

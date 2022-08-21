@@ -13,6 +13,12 @@ export default {
   components: {
     HelloI18n,
   },
+  created() {
+    const lang = localStorage.getItem("lang");
+    if (lang) {
+      this.$i18n.locale = lang;
+    }
+  },
 };
 </script>
 
