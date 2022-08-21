@@ -8,6 +8,9 @@
     <span>
       {{ $t("fruid.kiwi") }}
     </span>
+    <span>
+      {{ $tc("car", 10) }}
+    </span>
     <div>
       <button @click="change('en')">English</button>
       <button @click="change('mm')">Myanmar</button>

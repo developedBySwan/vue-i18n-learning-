@@ -6,5 +6,6 @@
     "kiwi": "kiwi English"
   },
   "lan": "eng",
-  "message": "English Message {name}"
+  "message": "English Message {name}",
+  "car": "no car | car | {n} cars"
 }
